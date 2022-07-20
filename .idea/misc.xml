@@ -7,7 +7,7 @@
         <entry key="..\:/Users/rocha/AndroidStudioProjects/PadariaMercadinhoFreire/app/src/main/res/drawable/backgroud.xml" value="0.326" />
         <entry key="..\:/Users/rocha/AndroidStudioProjects/PadariaMercadinhoFreire/app/src/main/res/drawable/background.xml" value="0.326" />
         <entry key="..\:/Users/rocha/AndroidStudioProjects/PadariaMercadinhoFreire/app/src/main/res/drawable/background_menu.xml" value="0.3675" />
-        <entry key="..\:/Users/rocha/AndroidStudioProjects/PadariaMercadinhoFreire/app/src/main/res/drawable/background_two.xml" value="0.326" />
+        <entry key="..\:/Users/rocha/AndroidStudioProjects/PadariaMercadinhoFreire/app/src/main/res/drawable/background_two.xml" value="0.2" />
         <entry key="..\:/Users/rocha/AndroidStudioProjects/PadariaMercadinhoFreire/app/src/main/res/drawable/body.xml" value="0.326" />
         <entry key="..\:/Users/rocha/AndroidStudioProjects/PadariaMercadinhoFreire/app/src/main/res/drawable/buttom.xml" value="0.3245" />
         <entry key="..\:/Users/rocha/AndroidStudioProjects/PadariaMercadinhoFreire/app/src/main/res/drawable/container_box.xml" value="0.283" />
@@ -17,7 +17,9 @@
         <entry key="..\:/Users/rocha/AndroidStudioProjects/PadariaMercadinhoFreire/app/src/main/res/drawable/edit_box_info_user.xml" value="0.1" />
         <entry key="..\:/Users/rocha/AndroidStudioProjects/PadariaMercadinhoFreire/app/src/main/res/drawable/edit_header.xml" value="0.2195" />
         <entry key="..\:/Users/rocha/AndroidStudioProjects/PadariaMercadinhoFreire/app/src/main/res/drawable/edit_text.xml" value="0.32" />
+        <entry key="..\:/Users/rocha/AndroidStudioProjects/PadariaMercadinhoFreire/app/src/main/res/drawable/ic_bi_box.xml" value="0.1775" />
         <entry key="..\:/Users/rocha/AndroidStudioProjects/PadariaMercadinhoFreire/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3675" />
+        <entry key="..\:/Users/rocha/AndroidStudioProjects/PadariaMercadinhoFreire/app/src/main/res/drawable/text_edit_box.xml" value="0.197" />
         <entry key="..\:/Users/rocha/AndroidStudioProjects/PadariaMercadinhoFreire/app/src/main/res/layout/activity_cadastrar_produto.xml" value="0.33" />
         <entry key="..\:/Users/rocha/AndroidStudioProjects/PadariaMercadinhoFreire/app/src/main/res/layout/activity_form_cadastro.xml" value="0.25" />
         <entry key="..\:/Users/rocha/AndroidStudioProjects/PadariaMercadinhoFreire/app/src/main/res/layout/activity_form_esqueci_senha.xml" value="0.33" />

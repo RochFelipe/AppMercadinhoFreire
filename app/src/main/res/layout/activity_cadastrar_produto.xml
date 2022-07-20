@@ -10,8 +10,11 @@
     <TextView
         android:id="@+id/background"
         style="@style/BackgroundTwo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -29,15 +32,132 @@
         app:layout_constraintBottom_toBottomOf="@id/image_product"
         app:layout_constraintEnd_toEndOf="@id/image_product"
         app:layout_constraintStart_toStartOf="@id/image_product"
-        app:layout_constraintTop_toTopOf="@id/image_product"/>
+        app:layout_constraintTop_toTopOf="@id/image_product"
+        />
 
     <TextView
         android:id="@+id/image_search"
         style="@style/TextViewTwo"
-        android:layout_margin="20dp"
+        android:layout_width="140dp"
+        android:layout_margin="15dp"
+        android:text="Galeria"
         app:layout_constraintStart_toEndOf="@id/image_product"
         app:layout_constraintTop_toTopOf="@id/image_product"
         app:layout_constraintBottom_toBottomOf="@id/image_product"
         />
+    <TextView
+        android:id="@+id/search_code"
+        style="@style/TextViewTwo"
+        android:text="Codigo de Barras"
+        android:layout_width="190dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="@id/background"
+        app:layout_constraintTop_toBottomOf="@id/image_product"
+        />
+
+    <TextView
+        android:id="@+id/icon_code"
+        style="@style/TextIcon"
+        android:layout_width="60dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintStart_toEndOf="@id/search_code"
+        app:layout_constraintTop_toBottomOf="@id/image_product"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="28dp"
+        android:src="@drawable/ic_bi_scan"
+        app:layout_constraintBottom_toBottomOf="@id/icon_code"
+        app:layout_constraintEnd_toEndOf="@id/icon_code"
+        app:layout_constraintStart_toStartOf="@id/icon_code"
+        app:layout_constraintTop_toTopOf="@id/icon_code"
+        />
+
+    <TextView
+        android:id="@+id/add_name_product"
+        style="@style/TextViewTwo"
+        android:text="Nome do Produto"
+        android:inputType="text"
+        android:layout_width="300dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@id/search_code"
+        app:layout_constraintEnd_toEndOf="@id/icon_code"
+        app:layout_constraintTop_toBottomOf="@id/search_code"
+        />
+
+    <TextView
+        android:id="@+id/add_quant_produc"
+        style="@style/TextViewTwo"
+        android:text="Quantidade de Produtos"
+        android:inputType="number"
+        android:layout_width="300dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@id/search_code"
+        app:layout_constraintEnd_toEndOf="@id/icon_code"
+        app:layout_constraintTop_toBottomOf="@id/add_name_product"
+        />
+    <TextView
+        android:id="@+id/add_price_produc"
+        style="@style/TextViewTwo"
+        android:text="Preço do Produto"
+        android:inputType="number"
+        android:layout_width="140dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@id/search_code"
+        app:layout_constraintTop_toBottomOf="@id/add_quant_produc"
+        />
+
+    <TextView
+        android:id="@+id/add_price_venda"
+        style="@style/TextViewTwo"
+        android:text="Preço de Venda"
+        android:inputType="number"
+        android:layout_width="140dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@id/add_quant_produc"
+        app:layout_constraintTop_toBottomOf="@id/add_quant_produc"
+        />
+
+    <TextView
+        android:id="@+id/add_date_frab"
+        style="@style/TextViewTwo"
+        android:text="Data de Fab"
+        android:inputType="number"
+        android:layout_width="140dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@id/search_code"
+        app:layout_constraintTop_toBottomOf="@id/add_price_produc"
+        />
+
+    <TextView
+        android:id="@+id/add_date_venc"
+        style="@style/TextViewTwo"
+        android:text="Data de Venc"
+        android:inputType="number"
+        android:layout_width="140dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@id/add_quant_produc"
+        app:layout_constraintTop_toBottomOf="@id/add_price_venda"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bottoms"
+        style="@style/ButtomValidation1"
+        android:text="Salvar"
+        app:layout_constraintStart_toStartOf="@id/add_date_venc"
+        app:layout_constraintEnd_toEndOf="@id/add_date_venc"
+        app:layout_constraintTop_toBottomOf="@id/add_date_venc"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bottomb"
+        style="@style/ButtomValidation1"
+        android:text="Voltar"
+        app:layout_constraintStart_toStartOf="@id/add_date_frab"
+        app:layout_constraintEnd_toEndOf="@id/add_date_frab"
+        app:layout_constraintTop_toBottomOf="@id/add_date_frab"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
