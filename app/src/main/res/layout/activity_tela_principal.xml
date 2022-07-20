@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".TelaPrincipal">
+
+    <TextView
+        android:id="@+id/text_header"
+        style="@style/TextLoja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/info_box"
+        style="@style/ContainerBoxInfoUser"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_header"
+        />
+    <TextView
+        android:id="@+id/info_box_user"
+        style="@style/ContainerBoxInfoUserHeader"
+        android:hint="Luisa Rocha"
+        android:drawableLeft="@drawable/ic_ep_user"
+        app:layout_constraintStart_toStartOf="@id/info_box"
+        app:layout_constraintEnd_toEndOf="@id/info_box"
+        app:layout_constraintTop_toTopOf="@id/info_box"/>
+
+    <TextView
+        android:id="@+id/box_vender"
+        style="@style/ContainerBoxIcons"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="@id/info_box"
+        app:layout_constraintTop_toBottomOf="@id/info_box" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="28dp"
+        android:src="@drawable/ic_cashregister"
+        app:layout_constraintBottom_toBottomOf="@id/box_vender"
+        app:layout_constraintEnd_toEndOf="@id/box_vender"
+        app:layout_constraintStart_toStartOf="@id/box_vender"
+        app:layout_constraintTop_toTopOf="@id/box_vender"/>
+
+    <TextView
+        android:id="@+id/box_ver_est"
+        style="@style/ContainerBoxIcons"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintStart_toEndOf="@id/box_vender"
+        app:layout_constraintTop_toBottomOf="@id/info_box"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_boxsearch"
+        android:layout_margin="28dp"
+        app:layout_constraintStart_toStartOf="@id/box_ver_est"
+        app:layout_constraintEnd_toEndOf="@id/box_ver_est"
+        app:layout_constraintTop_toTopOf="@id/box_ver_est"/>
+
+
+    <TextView
+        android:id="@+id/box_list_produto"
+        style="@style/ContainerBoxIcons"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintStart_toStartOf="@id/box_vender"
+        app:layout_constraintEnd_toEndOf="@id/box_vender"
+        app:layout_constraintTop_toBottomOf="@id/box_vender"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_viewlistoutlineounded"
+        android:layout_margin="28dp"
+        app:layout_constraintStart_toStartOf="@id/box_list_produto"
+        app:layout_constraintEnd_toEndOf="@id/box_list_produto"
+        app:layout_constraintTop_toTopOf="@id/box_list_produto"
+        />
+
+    <TextView
+        android:id="@+id/box_adc_produto"
+        style="@style/ContainerBoxIcons"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintStart_toEndOf="@id/box_list_produto"
+        app:layout_constraintTop_toBottomOf="@id/box_ver_est"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_fe_addcart"
+        android:layout_margin="28dp"
+        app:layout_constraintStart_toStartOf="@id/box_adc_produto"
+        app:layout_constraintEnd_toEndOf="@id/box_adc_produto"
+        app:layout_constraintTop_toTopOf="@id/box_adc_produto"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_voltar"
+        style="@style/Buttom"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/register_bottom2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/box_adc_produto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

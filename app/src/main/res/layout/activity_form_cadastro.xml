@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".FormCadastro">
+
+    <ImageView
+        style="@style/Registrar"
+        android:id="@+id/imageView1"
+        android:src="@drawable/logocicler"
+        app:layout_editor_absoluteX="88dp"
+        app:layout_editor_absoluteY="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"/>
+
+
+    <View
+        android:id="@+id/containerBoxRegister"
+        style="@style/ContainerBoxRegister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1"/>
+
+    <TextView
+        android:id="@+id/toptext"
+        style="@style/TextTop"
+        android:text="@string/title_cadastro"
+        app:layout_constraintStart_toStartOf="@id/containerBoxRegister"
+        app:layout_constraintEnd_toEndOf="@id/containerBoxRegister"
+        app:layout_constraintTop_toTopOf="@id/containerBoxRegister" />
+
+
+    <TextView
+        android:id="@+id/edit_user_register"
+        style="@style/EditText"
+        android:hint="Usuario"
+        android:drawableRight="@drawable/ic_user"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@id/containerBoxRegister"
+        app:layout_constraintEnd_toEndOf="@id/containerBoxRegister"
+        app:layout_constraintTop_toTopOf="@id/toptext"/>
+
+    <TextView
+        android:id="@+id/edit_senha_register"
+        style="@style/EditText"
+        android:hint="Senha"
+        android:drawableRight="@drawable/carbon_password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@id/containerBoxRegister"
+        app:layout_constraintEnd_toEndOf="@id/containerBoxRegister"
+        app:layout_constraintTop_toBottomOf="@id/edit_user_register"/>
+
+    <TextView
+        android:id="@+id/edit_email_register"
+        style="@style/EditText"
+        android:hint="Email"
+        android:drawableRight="@drawable/ic_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@id/containerBoxRegister"
+        app:layout_constraintEnd_toEndOf="@id/containerBoxRegister"
+        app:layout_constraintTop_toBottomOf="@id/edit_senha_register"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bottom1"
+        style="@style/ButtomRegister1"
+        android:text="@string/register_bottom1"
+        app:layout_constraintStart_toStartOf="@id/containerBoxRegister"
+        app:layout_constraintEnd_toEndOf="@id/containerBoxRegister"
+        app:layout_constraintTop_toBottomOf="@id/edit_email_register"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bottom2"
+        style="@style/ButtomRegister2"
+        android:text="@string/register_bottom2"
+        app:layout_constraintStart_toStartOf="@id/containerBoxRegister"
+        app:layout_constraintEnd_toEndOf="@id/containerBoxRegister"
+        app:layout_constraintTop_toBottomOf="@id/bottom1"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView1"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

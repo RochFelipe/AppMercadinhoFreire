@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Padaria M.F</string>
+    <string name="acessar">Acessar</string>
+    <string name="registrar">Registrar</string>
+    <string name="esqueceu_senha">Esqueceu sua senha</string>
+    <string name="title_cadastro">Crie sua conta</string>
+    <string name="register_bottom1">Criar conta</string>
+    <string name="register_bottom2">Voltar</string>
+    <string name="register_validation1">Enviar</string>
+    <string name="title_esqueceu">Digite seu email para a verificação da conta.</string>
+
+</resources>
